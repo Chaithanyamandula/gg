@@ -24,4 +24,4 @@ requests==2.32.3
 six==1.17.0
 SQLAlchemy==2.0.41
 sqlparse==0.5.3
-==4.12.2
+

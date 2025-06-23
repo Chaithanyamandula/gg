@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Results</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .container { max-width: 500px; margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 8px; text-align: center; }
+        h1 { color: #007bff; }
+        p { font-size: 1.1em; }
+        .score { font-size: 1.5em; font-weight: bold; color: #28a745; }
+        .home-button { background-color: #6c757d; color: white; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer; text-decoration: none; display: inline-block; margin-top: 20px;}
+        .home-button:hover { background-color: #5a6268; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz Completed!</h1>
+        <p>Congratulations, {{ name }}!</p>
+        <p>You participated in the <strong>{{ language }}</strong> quiz.</p>
+        <p>Your Score: <span class="score">{{ score }}</span> out of {{ total }}</p>
+        <p>A detailed result has been sent to your email address.</p>
+        <a href="/" class="home-button">Start Another Quiz</a>
+    </div>
+</body>
+</html>
